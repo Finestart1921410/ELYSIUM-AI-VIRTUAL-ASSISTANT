@@ -1,0 +1,283 @@
+/********** common setting **********/
+
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100;200;300;400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto Mono", monospace;
+}
+
+.main {
+    min-height: 5vh;
+    position: relative;
+    width: 100%;
+    background: transparent;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    display: inline-block;
+    padding: 1px 1px;
+    border-radius: 22px;
+    font-weight: 700;
+    transition: 0.3s ease-in-out;
+    text-decoration: none;
+    color: #000000; /* Updated text color to black */
+  }
+  
+
+  
+
+.main .image-container {
+  padding: 10px;
+  justify-content: center;
+  
+}
+
+.main .image-container .image {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.main .image-container .image img {
+  width: 170px;
+  align-items: center;
+}
+
+.main .image-container h1 {
+    color: #00ffad;
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 40px;
+  }
+
+.main .image-container p {
+    color: #324042;
+    text-align: center;
+    margin-bottom: 40px;
+  }
+
+.main .input {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40vw;
+    height: 50px;
+    border-radius: 20px;
+    background: #00ffad;
+    margin: 20px auto;
+    color: #000000; /* Updated text color to black */
+    font-size: 18px; /* Updated font size to 18px */
+  }
+  
+
+  .main .input .talk {
+    background: transparent;
+    outline: none;
+    border: none;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+    cursor: pointer;
+    color: #000000 !important; /* Updated text color to black */
+  }
+
+
+
+
+
+
+
+
+
+
+
+.main .input .talk i {
+  font-size: 20px;
+  color: #aed0d0;
+}
+
+.main .input .content {
+    color: #3f734a;
+    font-size: 30px;
+    margin: 0; /* Remove the margins */
+    white-space: nowrap; /* Prevent line breaks */
+    font-family: Arial, sans-serif; /* Set the desired font style */
+  }
+  
+  
+
+h2 {
+    font-size: 2.8rem !important;
+    font-weight: 700;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+a,
+button {
+    cursor: pointer;
+}
+
+.jumbotron {
+    margin-bottom: 0 !important;
+}
+
+.atlas-cta {
+    border-radius: 22px !important;
+    padding: 12px 30px !important;
+    font-weight: 700;
+    transition: .3s ease-in-out !important;
+}
+
+.atlas-cta:hover {
+    text-decoration: none;
+    transform: translateY(-5px);
+}
+
+.atlas-cta-wide {
+    width: 100%;
+}
+
+.cta-green {
+    background: #00FFAD;
+    color: #192440;
+}
+
+.cta-green:hover {
+    color: #ffffff;
+    background: #00e69c;
+}
+
+.cta-blue {
+    background: #192440;
+    color: #ffffff;
+}
+
+.cta-blue:hover {
+    color: #ffffff;
+    background: #121a2e;
+}
+
+.cta-ghost {
+    border: 2px solid #192440 !important;
+    color: #192440;
+}
+
+.cta-ghost:hover {
+    color: #ffffff;
+    background: #121a2e;
+}
+
+#banner {
+    background-size: cover;
+}
+
+/********** banner **********/
+#banner header {
+    overflow: hidden;
+}
+
+#banner header img {
+    max-width: 80px;
+}
+
+
+
+
+/********** feature (skew background) **********/
+.feature img {
+    width: 100%;
+    max-width: 480px;
+}
+
+#feature-first {
+    background: linear-gradient(168deg, #ffffff 55%, #00FFAD 0);
+}
+
+#feature-last {
+    background: #00FFAD;
+}
+
+/********** price table **********/
+#price-table {
+    padding-top: 4rem !important;
+    padding-bottom: 4rem !important;
+}
+
+#price-table__premium {
+    background: #192440;
+    color: #ffffff;
+}
+
+#price-table ul li {
+    padding: 5px 0;
+}
+
+/********** contact **********/
+#contact {
+    background-size: cover;
+}
+
+#contact ul li {
+    padding: 3px 0;
+}
+
+#contact form {
+    color: #00FFAD;
+}
+
+#contact form input,
+#contact form textarea {
+    background: transparent;
+    border: 1px solid #00FFAD;
+    color: #ffffff;
+}
+
+/********** copyright **********/
+#copyright {
+    background: #192440;
+    padding: 2rem 3rem;
+}
+
+#copyright #social-media a {
+    width: 40px;
+    height: 40px;
+    border-radius: 99%;
+    background: #ffffff;
+    transition: .4s ease;
+}
+
+#copyright #social-media a i {
+    color: #192440;
+    font-size: 1.2rem;
+    line-height: 40px;
+}
+
+#copyright #social-media a:hover {
+    background: #00FFAD;
+}
+
+#copyright #social-media a:hover i {
+    color: #ffffff;
+}
+
+/********** RWD **********/
+@media (max-width: 575px) {
+    #banner h1 {
+        font-size: 3.6rem;
+    }
+}
